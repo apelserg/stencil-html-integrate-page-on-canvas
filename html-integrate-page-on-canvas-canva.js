@@ -14,23 +14,23 @@ APELSERG.CANVA.Rewrite = function () {
 
     ctx.drawImage(APELSERG.CONFIG.PROC.Img, 0, 0);
 
-    for (var n = 0 in APELSERG.MODEL.DATA.Commands) {
+    for (var n in APELSERG.MODEL.DATA.Commands) {
         APELSERG.CANVA.CommandRewrite(ctx, APELSERG.MODEL.DATA.Commands[n]);
     }
 
-    for (var n = 0 in APELSERG.MODEL.DATA.Links) {
+    for (var n in APELSERG.MODEL.DATA.Links) {
         APELSERG.CANVA.LinkRewrite(ctx, APELSERG.MODEL.DATA.Links[n]);
     }
 
-    for (var n = 0 in APELSERG.MODEL.DATA.Lables) {
+    for (var n in APELSERG.MODEL.DATA.Lables) {
         APELSERG.CANVA.LableRewrite(ctx, APELSERG.MODEL.DATA.Lables[n]);
     }
 
-    for (var n = 0 in APELSERG.MODEL.DATA.Content) {
+    for (var n in APELSERG.MODEL.DATA.Content) {
         APELSERG.CANVA.ContentRewrite(ctx, APELSERG.MODEL.DATA.Content[n]);
     }
 
-    for (var n = 0 in APELSERG.MODEL.DATA.Flakes) {
+    for (var n in APELSERG.MODEL.DATA.Flakes) {
         APELSERG.CANVA.FlakeRewrite(ctx, APELSERG.MODEL.DATA.Flakes[n]);
     }
 }

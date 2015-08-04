@@ -108,7 +108,7 @@ APELSERG.MODEL.MakeLinks = function () {
         { name: "Этот проект на GitHub", url: "https://github.com/apelserg/stencil-html-integrate-page-on-canvas" }
     ];
 
-    for (var n = 0 in linksList) {
+    for (var n in linksList) {
 
         var color = "white";
         var link = new APELSERG.MODEL.Link(linksList[n].url, linksList[n].name, baseX, baseY + 30 * n, linksList[n].name.length * 10 + 30, 30, color);
@@ -449,7 +449,7 @@ APELSERG.MODEL.CheckMoveFrame = function (frame) {
 //===
 APELSERG.MODEL.UpdateButtons = function () {
 
-    for (var n = 0 in APELSERG.MODEL.DATA.Commands) {
+    for (var n in APELSERG.MODEL.DATA.Commands) {
 
         var command = APELSERG.MODEL.DATA.Commands[n];
 
@@ -459,7 +459,7 @@ APELSERG.MODEL.UpdateButtons = function () {
         APELSERG.MODEL.CommandHandle(command);
     }
 
-    for (var n = 0 in APELSERG.MODEL.DATA.Links) {
+    for (var n in APELSERG.MODEL.DATA.Links) {
 
         var link = APELSERG.MODEL.DATA.Links[n];
 
@@ -487,7 +487,7 @@ APELSERG.MODEL.UpdateButtons = function () {
 //===
 APELSERG.MODEL.UpdateFlakes = function () {
 
-    for (var n = 0 in APELSERG.MODEL.DATA.Flakes) {
+    for (var n in APELSERG.MODEL.DATA.Flakes) {
 
         var flake = APELSERG.MODEL.DATA.Flakes[n];
 
@@ -579,7 +579,7 @@ APELSERG.MODEL.ContentAsHtmlText = function () {
 
     APELSERG.MODEL.DATA.Links = APELSERG.MODEL.MakeLinks();
 
-    for (var n = 0 in APELSERG.MODEL.DATA.Links) {
+    for (var n in APELSERG.MODEL.DATA.Links) {
 
         var link = APELSERG.MODEL.DATA.Links[n];
 
@@ -598,7 +598,7 @@ APELSERG.MODEL.ContentAsHtmlText = function () {
 
             APELSERG.MODEL.DATA.Content = APELSERG.MODEL.MakeContent();
 
-            for (var n = 0 in APELSERG.MODEL.DATA.Content) {
+            for (var n in APELSERG.MODEL.DATA.Content) {
 
                 htmlText += APELSERG.MODEL.DATA.Content[n].Text + "<br/>";
 
