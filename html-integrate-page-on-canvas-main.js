@@ -175,7 +175,7 @@ APELSERG.MAIN.ShowPage = function () {
 APELSERG.MAIN.CheckCompatible = function () {
 
     APELSERG.CONFIG.SET.CompatibleType = 0;
-    if (!window.requestAnimationFrame || screen.width < 1000) APELSERG.CONFIG.SET.CompatibleType = 1;
+    if (!window.requestAnimationFrame || screen.width < 600) APELSERG.CONFIG.SET.CompatibleType = 1;
 }
 
 //===
